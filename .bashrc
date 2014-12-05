@@ -13,8 +13,13 @@
 ##############################################################################
 # 01. General                                                                #
 ##############################################################################
+
+# Git
+source ~/.git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=1
+
 # Shell prompt
-export PS1="\n\[\e[0;36m\]┌─[\[\e[0m\]\[\e[1;33m\]\u\[\e[0m\]\[\e[1;36m\] @ \[\e[0m\]\[\e[1;33m\]\h\[\e[0m\]\[\e[0;36m\]]─[\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]\[\e[0;36m\]]\[\e[0;36m\]─[\[\e[0m\]\[\e[0;31m\]\t\[\e[0m\]\[\e[0;36m\]]\[\e[0m\]\n\[\e[0;36m\]└─[\[\e[0m\]\[\e[1;37m\]\$\[\e[0m\]\[\e[0;36m\]]› \[\e[0m\]"
+export PS1='\u@\h [\[\e[0m\]\[\e[0;32m\]\t\[\e[0m\]\[\e[00m\]]\[\e[00m\] [\W]\[\033[32m\]$(__git_ps1 " (%s)")\[\033[00m\]\n\[\e[00m\]└─[\[\e[0m\]\[\e[00m\]\$\[\e[0m\]\[\e[00m\]]›\[\e[0m\] $ '
 
 # If fortune is installed, run a fortune
 if [ -e /opt/local/bin/fortune ]; then
@@ -34,4 +39,4 @@ alias ls="ls -Glah"
 # CLI Colors
 export CLICOLOR=1
 # Set "ls" colors
-export LSCOLORS=Gxfxcxdxbxegedabagacad
+export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
