@@ -19,7 +19,7 @@ source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 
 # Shell prompt
-export PS1='\u@\h [\[\e[0m\]\[\e[0;32m\]\t\[\e[0m\]\[\e[00m\]]\[\e[00m\] [\W]\[\033[32m\]$(__git_ps1 " (%s)")\[\033[00m\]\n\[\e[00m\]└─[\[\e[0m\]\[\e[00m\]\$\[\e[0m\]\[\e[00m\]]›\[\e[0m\] $ '
+export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] [\[\e[0m\]\[\e[1;34m\]\t\[\e[0m\]\[\e[1;34m\]] \[\e[01;34m\][\w]\[\033[00m\]\n\[\e[00m\]└─[\[\e[0m\]\[\e[00m\]\$\[\e[0m\]\[\e[00m\]]›\[\033[01;31m\]$(__git_ps1 " (%s)")\[\033[00m\]\[\e[0m\] $ '
 
 # If fortune is installed, run a fortune
 if [ -e /opt/local/bin/fortune ]; then
@@ -39,4 +39,4 @@ alias ls="ls -Glah"
 # CLI Colors
 export CLICOLOR=1
 # Set "ls" colors
-export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
+export LSCOLORS=GxFxCxDxBxegedabagaced
