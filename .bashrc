@@ -14,6 +14,9 @@
 # 01. General                                                                #
 ##############################################################################
 
+# Java Home
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 # Git
 source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
