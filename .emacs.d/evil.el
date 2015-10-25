@@ -1,3 +1,6 @@
+(unless (package-installed-p 'evil)
+  (package-install 'evil))
+
 ; Give us back Ctrl+U for vim emulation
 (setq evil-want-C-u-scroll t)
 
