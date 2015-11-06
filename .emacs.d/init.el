@@ -55,3 +55,6 @@
 ; use powerline
 (require 'powerline)
 (powerline-center-evil-theme)
+
+; do not create backup files
+(setq make-backup-files nil)
